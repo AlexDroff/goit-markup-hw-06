@@ -25,12 +25,11 @@
     <!-- #region header -->
     <header class="header">
       <div class="container">
-        <nav class="nav">
-          <a class="header-logo" href="./index.html"
-            >Web<span class="accent-header-logo">Studio</span>
+        <nav class="header-nav">
+          <a class="logo header-logo" href="./index.html"
+            >Web<span class="accent-logo">Studio</span>
           </a>
-
-          <ul class="nav-list is-open">
+          <ul class="nav-list">
             <li class="nav-item">
               <a class="nav-link active" href="./index.html">Studio</a>
             </li>
@@ -42,8 +41,8 @@
             </li>
           </ul>
         </nav>
-        <address class="address is-open">
-          <ul class="adress-list is-open">
+        <address class="adress">
+          <ul class="adress-list">
             <li class="adress-item">
               <a class="adress-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -56,11 +55,11 @@
             </li>
           </ul>
         </address>
-        <!-- <button class="header-menu-open-btn" type="button">
-          <svg class="header-menu-icon" width="24" height="24">
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
-        </button> -->
+        </button>
       </div>
     </header>
     <!-- #endregion header -->
@@ -89,7 +88,7 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="skill-subtitle">Strategy</h3>
+              <h3 class="skill-title">Strategy</h3>
               <p class="skill-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
@@ -101,7 +100,7 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="skill-subtitle">Punctuality</h3>
+              <h3 class="skill-title">Punctuality</h3>
               <p class="skill-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
@@ -113,7 +112,7 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="skill-subtitle">Diligence</h3>
+              <h3 class="skill-title">Diligence</h3>
               <p class="skill-text">
                 Research and confirm brands with the strongest digital growth
                 opportunities and minimize risk.
@@ -125,7 +124,7 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="skill-subtitle">Technologies</h3>
+              <h3 class="skill-title">Technologies</h3>
               <p class="skill-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -662,7 +661,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-con-logo">
-          <a class="footer-logo" href="./index.html"
+          <a class="footer-logo logo" href="./index.html"
             >Web<span class="accent-footer-logo">Studio</span></a
           >
           <p class="footer-logo-text">
@@ -744,7 +743,7 @@
     <!-- #endregion footer -->
 
     <!-- #region modal -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
