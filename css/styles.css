@@ -29,15 +29,15 @@ ol {
 section {
   padding: 120px 0;
 }
-
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .container {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
-}
-
-img {
-  display: block;
 }
 /* #endregion general styles */
 
