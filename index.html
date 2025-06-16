@@ -24,7 +24,7 @@
   <body>
     <!-- #region header -->
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="header-nav">
           <a class="logo header-logo" href="./index.html"
             >Web<span class="accent-logo">Studio</span>
@@ -55,11 +55,95 @@
             </li>
           </ul>
         </address>
-        <button class="burger-btn" type="button">
+        <button class="burger-btn" type="button" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
+      </div>
+
+      <!-- mobil menu -->
+      <div class="mobil-menu" data-menu>
+        <div class="container mobil-menu-container">
+          <button class="mobile-menu-close-btn" type="button" data-menu-close>
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobil-nav">
+            <ul class="mobil-list">
+              <li class="mobil-item">
+                <a class="mobil-link" href="./index.html">Studio</a>
+              </li>
+              <li class="mobil-item">
+                <a class="mobil-link" href="/">Portfolio</a>
+              </li>
+              <li class="mobil-item">
+                <a class="mobil-link" href="/">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobil-adress">
+            <ul class="mobil-adress-list">
+              <li class="mobil-adress-item">
+                <a class="mobil-adres-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mobil-adress-item">
+                <a class="mobil-adres-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobil-icon-list">
+            <li class="mobil-icon-item">
+              <a
+                class="mobil-link-icon"
+                href="https://instagram.com"
+                target="_blank"
+              >
+                <svg class="mobil-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobil-icon-item">
+              <a
+                class="mobil-link-icon"
+                href="https://twitter.com"
+                target="_blank"
+              >
+                <svg class="mobil-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobil-icon-item">
+              <a
+                class="mobil-link-icon"
+                href="https://facebook.com"
+                target="_blank"
+              >
+                <svg class="mobil-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobil-icon-item">
+              <a
+                class="mobil-link-icon"
+                href="https://linkedin.com"
+                target="_blank"
+              >
+                <svg class="mobil-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- #endregion header -->
@@ -68,7 +152,7 @@
     <main>
       <!-- #region section hero -->
       <section class="hero">
-        <div class="container">
+        <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn" type="button" data-modal-open>
             Order Service
@@ -79,7 +163,7 @@
 
       <!-- #region section skill -->
       <section class="skill">
-        <div class="container">
+        <div class="container skill-container">
           <h2 class="visually-hidden">Professional Skills</h2>
           <ul class="skill-list">
             <li class="skill-item">
@@ -137,7 +221,7 @@
 
       <!-- #region section team -->
       <section class="team">
-        <div class="container">
+        <div class="container team-container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
@@ -151,7 +235,7 @@
                 alt="Mark Guerrero"
                 width="264"
               />
-              <div class="team-container">
+              <div class="team-cover">
                 <h3 class="team-subtitles">Mark Guerrero</h3>
                 <p class="team-text">Product Designer</p>
                 <ul class="team-icon-list">
@@ -213,7 +297,7 @@
                 alt="Tom Ford"
                 width="264"
               />
-              <div class="team-container">
+              <div class="team-cover">
                 <h3 class="team-subtitles">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
                 <ul class="team-icon-list">
@@ -275,7 +359,7 @@
                 alt="Camila Garcia"
                 width="264"
               />
-              <div class="team-container">
+              <div class="team-cover">
                 <h3 class="team-subtitles">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
                 <ul class="team-icon-list">
@@ -337,7 +421,7 @@
                 alt="Daniel Wilson"
                 width="264"
               />
-              <div class="team-container">
+              <div class="team-cover">
                 <h3 class="team-subtitles">Daniel Wilson</h3>
                 <p class="team-text">UI Designer</p>
                 <ul class="team-icon-list">
@@ -395,7 +479,7 @@
 
       <!-- #region section portfolio -->
       <section class="portfolio">
-        <div class="container">
+        <div class="container portfolio-container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-item">
@@ -435,7 +519,7 @@
                   · Cloud Storage App
                 </p>
               </div>
-              <div class="container-portfolio">
+              <div class="portfolio-cover">
                 <h3 class="portfolio-subtitle">Banking App</h3>
                 <p class="portfolio-text">App</p>
               </div>
@@ -477,7 +561,7 @@
                   · Cloud Storage App
                 </p>
               </div>
-              <div class="container-portfolio">
+              <div class="portfolio-cover">
                 <h3 class="portfolio-subtitle">Cashless Payment</h3>
                 <p class="portfolio-text">Marketing</p>
               </div>
@@ -519,7 +603,7 @@
                   · Cloud Storage App
                 </p>
               </div>
-              <div class="container-portfolio">
+              <div class="portfolio-cover">
                 <h3 class="portfolio-subtitle">Meditation App</h3>
                 <p class="portfolio-text">App</p>
               </div>
@@ -561,7 +645,7 @@
                   · Cloud Storage App
                 </p>
               </div>
-              <div class="container-portfolio">
+              <div class="portfolio-cover">
                 <h3 class="portfolio-subtitle">Taxi Service</h3>
                 <p class="portfolio-text">Marketing</p>
               </div>
@@ -603,7 +687,7 @@
                   · Cloud Storage App
                 </p>
               </div>
-              <div class="container-portfolio">
+              <div class="portfolio-cover">
                 <h3 class="portfolio-subtitle">Screen Illustrations</h3>
                 <p class="portfolio-text">Design</p>
               </div>
@@ -645,7 +729,7 @@
                   · Cloud Storage App
                 </p>
               </div>
-              <div class="container-portfolio">
+              <div class="portfolio-cover">
                 <h3 class="portfolio-subtitle">Online Courses</h3>
                 <p class="portfolio-text">Marketing</p>
               </div>
@@ -659,7 +743,7 @@
 
     <!-- #region footer -->
     <footer class="footer">
-      <div class="container">
+      <div class="container footer-container">
         <div class="footer-con-logo">
           <a class="footer-logo logo" href="./index.html"
             >Web<span class="accent-footer-logo">Studio</span></a
@@ -743,7 +827,7 @@
     <!-- #endregion footer -->
 
     <!-- #region modal -->
-    <div class="backdrop hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
@@ -815,10 +899,12 @@
               <span class="square"
                 ><svg class="chekbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-vector"></use></svg></span
-              >I accept the terms and conditions of the
-              <a class="accent-user-chekbox" href="http://google.com"
-                >Privacy Policy</a
-              >
+              ><span class="checkbox-text">
+                I accept the terms and conditions of the
+                <a class="accent-user-chekbox" href="http://google.com"
+                  >Privacy Policy</a
+                >
+              </span>
             </label>
           </div>
           <button class="modal-btn" type="button">Send</button>
@@ -829,5 +915,6 @@
     <!-- #endregion modal -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
